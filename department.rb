@@ -1,10 +1,13 @@
 class Department
+  attr_reader :name, :employees
+
   def initialize(name)
     @name = name
+    @employees = []
   end
 
-  def name
-    @name
+  def add_employee(employee)
+    employees << employee
   end
 
 end
